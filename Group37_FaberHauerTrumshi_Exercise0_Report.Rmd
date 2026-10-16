@@ -1,6 +1,6 @@
 ---
 title: "Machine Learning Assignment 0"
-author: "Alexandra Faber (), Lena Hauer (), Fiona Trumshi (12019404)"
+author: "Alexandra Faber (12202094), Lena Hauer (), Fiona Trumshi (12019404)"
 date: "October 2026"
 output:
   pdf_document:
@@ -17,21 +17,18 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 ```
 
 # Introduction
+For this assignment we chose two classification datasets that differ in the type of target variable and in their structure. The first contains about 101,766 hospital encounters of diabetic patients from 130 US hospitals, described mainly by categorical attributes. Its target indicates whether a patient was readmitted, which we recode as a binary outcome. The second contains 32,593 student enrolments and we choose the student’s final result as target variable with four classes. Both datasets require preprocessing, including handling missing values and encoding categorical attributes. However, the first data set is a single table with a small code-mapping file, whereas the second is spread across seven related tables, including more than 10 million logs of students’ activity in the online learning environment, which must be merged and aggregated before analysis.
 
-## Datasets & Source
-
-# Dataset 1: Diabetes
-
-List of all variables (description + data type), Target variable
+# Dataset 1: Diabetes 130-US Hospitals for Years 1999-2008
 
 ## Attributes
+List of all variables (description + data type), Target variable
 
 ## Distribution of selected input variables
 
-# Dataset 2:
-
-List of all variables (description + data type), Target variable
+# Dataset 2: Open University Learning Analytics
 
 ## Attributes
+List of all variables (description + data type), Target variable
 
 ## Distribution of selected input variables

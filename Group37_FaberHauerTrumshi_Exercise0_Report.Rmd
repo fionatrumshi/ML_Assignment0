@@ -1,0 +1,37 @@
+---
+title: "Machine Learning Assignment 0"
+author: "Alexandra Faber (), Lena Hauer (), Fiona Trumshi (12019404)"
+date: "October 2026"
+output:
+  pdf_document:
+    number_sections: true
+fontsize: 12pt
+geometry: margin=0.7in
+header-includes:
+  - \usepackage{xcolor}
+  - \usepackage{amsmath,amsthm,amssymb}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+# Introduction
+
+## Datasets & Source
+
+# Dataset 1: Diabetes
+
+List of all variables (description + data type), Target variable
+
+## Attributes
+
+## Distribution of selected input variables
+
+# Dataset 2:
+
+List of all variables (description + data type), Target variable
+
+## Attributes
+
+## Distribution of selected input variables

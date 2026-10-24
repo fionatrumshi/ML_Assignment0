@@ -14,8 +14,7 @@ assessment['score'] = pd.to_numeric(assessment['score'], errors='coerce')
 info_aaa = info[info['code_module'] == 'AAA']
 clicks = vle.groupby('id_student')['sum_click'].sum().reset_index()
 
-# Average assessment score per student
-# Now calculate the average score, ignoring the NaN values
+# Average assessment score per student, ignoring NaN
 scores = assessment.groupby('id_student')['score'].mean().reset_index()
 
 # Merge the datasets
@@ -24,7 +23,7 @@ student_data = info_aaa[['id_student', 'final_result']].drop_duplicates()
 student_data = student_data.merge(clicks, on='id_student', how='inner')
 student_data = student_data.merge(scores, on='id_student', how='inner')
 
-# 4. Create the visualizations
+# visualizations
 fig, axes = plt.subplots(1, 2, figsize=(15, 6))
 
 # Plot A: Categorical grades (Final Result) vs Total Clicks
